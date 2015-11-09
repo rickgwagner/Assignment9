@@ -1,0 +1,13 @@
+  .ui-tabs-vertical { width: 55em; }
+  .ui-tabs-vertical .ui-tabs-nav { padding: .2em .4em .2em .2em; float: left; width: 12em; }
+  .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-width: 1px !important; margin: .1em; border-radius: 3px; }
+  .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+  .ui-tabs-vertical { padding-bottom: .2em; padding-right: .1em; border-width: 1px; }
+  .ui-tabs-nav li.ui-tabs-active { margin-bottom: .1em; padding-right: 0; border-width: 1px; }
+  .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}

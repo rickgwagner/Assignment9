@@ -1,0 +1,119 @@
+/*CSS for scroll spy*/
+
+a div.progress{ /* style for progress element that gets added to each A element of a spy menu when the "enableprogress" option is enabled and set to "progress" */
+background: #E5E5E5;
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+ul.underlinemenu{
+padding: 6px 0 7px 0; /*6px should equal top padding of "ul li a" below, 7px should equal bottom padding + bottom border of "ul li a" below*/
+margin: 0;
+text-align: left; //set value to "left", "center", or "right"*/
+text-transform: uppercase;
+width: 100%;
+overflow: hidden;
+padding-bottom: 15px;
+z-index: 1000;
+}
+
+ul.underlinemenu li a{
+color: #494949;
+/*font: bold 16px Arial;*/
+padding: 6px 3px 4px 3px; /*top padding is 6px, bottom padding is 4px*/
+margin-right: 10px; /*spacing between each menu link*/
+text-decoration: none;
+border-bottom: 8px solid #a7a7a7;
+}
+
+ul.underlinemenu li a:hover, ul.underlinemenu li a.selected{
+color: black;
+border-bottom-color: #CC1C0D;
+}
+
+
+
+/* ----------------------------------------
+    Labs page main styles
+---------------------------------------- */
+
+
+.light {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* ----------------------------------------
+    Lab specific: scrollUp
+---------------------------------------- */
+
+.themes {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+.themes li {
+    text-align: center;
+    display: block;
+    float: left;
+    width: 22%;
+    margin-left: 4%;
+}
+
+.themes li.first {
+    margin-left: 0;
+}
+
+.themes li a {
+    display: block;
+    padding: 10px;
+    background-color: #444;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #eee;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.themes li a:hover,
+.themes li a.active {
+    background-color: #F66169;
+    color: #FAEFDE;
+}
+
+#toggleActive {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    background-color: #444;
+    color: #eee;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#toggleActive.active {
+    background-color: #F66169;
+    color: #FAEFDE;
+}
+
+#scrollUp-active {
+    display: none;
+}
