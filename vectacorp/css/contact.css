@@ -1,9 +1,0 @@
-span.ui-button-text {
-  display: none !important;  
-}
-
-/* button text element */
-.ui-button .ui-button-text {
-	display: none !important;
-	line-height: normal;
-}

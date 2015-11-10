@@ -23,7 +23,7 @@ $(function () {
 });
 
 $(document).ready(function () {
-    $("#dialog").dialog({autoOpen: false});
+    $("#dialog").dialog({autoOpen: false, closeText: false});
     $("#opener").click(function () {
         $("#dialog").dialog("open");
         event.preventDefault();

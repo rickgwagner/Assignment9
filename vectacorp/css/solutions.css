@@ -1,51 +1,55 @@
 /*CSS for scroll spy*/
 
-a div.progress{ /* style for progress element that gets added to each A element of a spy menu when the "enableprogress" option is enabled and set to "progress" */
-background: #E5E5E5;
-position: absolute;
-height: 100%;
-width: 100%;
-top: 0;
-left: 0;
-z-index: -1;
+a div.progress {
+    /* style for progress element that gets added to each A element of a spy menu when the "enableprogress" option is enabled and set to "progress" */
+    background: #E5E5E5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-ul.underlinemenu{
-padding: 6px 0 7px 0; /*6px should equal top padding of "ul li a" below, 7px should equal bottom padding + bottom border of "ul li a" below*/
-margin: 0;
-text-align: left; //set value to "left", "center", or "right"*/
-text-transform: uppercase;
-width: 100%;
-overflow: hidden;
-padding-bottom: 15px;
-z-index: 1000;
+ul.underlinemenu {
+    padding: 6px 0 7px 0;
+    /*6px should equal top padding of "ul li a" below, 7px should equal bottom padding + bottom border of "ul li a" below*/
+    margin: 0;
+    text-align: left; //set value to "left", "center", or "right"*/
+    text-transform: uppercase;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 15px;
+    z-index: 1000;
 }
 
-ul.underlinemenu li a{
-color: #494949;
-/*font: bold 16px Arial;*/
-padding: 6px 3px 4px 3px; /*top padding is 6px, bottom padding is 4px*/
-margin-right: 10px; /*spacing between each menu link*/
-text-decoration: none;
-border-bottom: 8px solid #a7a7a7;
+ul.underlinemenu li a {
+    color: #494949;
+    /*font: bold 16px Arial;*/
+    padding: 6px 3px 4px 3px;
+    /*top padding is 6px, bottom padding is 4px*/
+    margin-right: 10px;
+    /*spacing between each menu link*/
+    text-decoration: none;
+    border-bottom: 8px solid #a7a7a7;
 }
 
-ul.underlinemenu li a:hover, ul.underlinemenu li a.selected{
-color: black;
-border-bottom-color: #CC1C0D;
+ul.underlinemenu li a:hover,
+ul.underlinemenu li a.selected {
+    color: black;
+    border-bottom-color: #CC1C0D;
 }
-
 
 
 /* ----------------------------------------
     Labs page main styles
 ---------------------------------------- */
 
-
 .light {
     color: #ccc;
     font-size: 14px;
 }
+
 
 /* ----------------------------------------
     Lab specific: scrollUp
