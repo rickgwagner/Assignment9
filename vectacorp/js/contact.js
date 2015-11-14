@@ -24,15 +24,29 @@ $(function () {
 
 $(document).ready(function () {
     $("#dialog").dialog({autoOpen: false, closeText: false});
-    $("#opener").click(function () {
-        $("#dialog").dialog("open");
+    $("#contact").submit(function (event) {
         event.preventDefault();
-    });
-            
-    $("#dialog").dialog({
-        close: function (event, ui) {}
-    });
-    $("#dialog").on("dialogclose", function (event, ui) {
-        window.location = "thanks.html";
+        $("#dialog").dialog("open");
+        $("#dialog").dialog({
+            close: function (event, ui) {}
+        });
+        $("#dialog").on("dialogclose", function (event, ui) {
+            window.location = "thanks.html";
+        });
     });
 });
+
+
+//$(document).ready(function () {
+//    $("#dialog").dialog({autoOpen: false, closeText: false});
+//    $("#contact").submit(function (event) {
+//        event.preventDefault();
+//        $("#dialog").dialog("open");
+//        $("#dialog").dialog({
+//            close: function (event, ui) {}
+//        });
+//        $("#dialog").on("dialogclose", function (event, ui) {
+//            $("#contact").submit();
+//        });
+//    });
+//});

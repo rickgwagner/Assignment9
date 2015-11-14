@@ -1,6 +1,6 @@
  /* management team section */
  
- .ui-tabs-vertical {
+ .ui-tabs-vertical, .ui-tabs-anchor {
      width: 53em;
  }
  
